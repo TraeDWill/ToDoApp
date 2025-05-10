@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>To-Do Application</title>
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <fieldset>
+        <label for="taskName">Task Name</label>
+        <input
+          type="text"
+          id="taskName"
+          name="taskName"
+          required
+          placeholder="Task Name"
+        />
+
+        <label for="difficulty"
+          >Difficulty:
+          <select id="difficulty">
+            <option value="">(Select One)</option>
+            <option value="1">Easy</option>
+            <option value="2">Medium</option>
+            <option value="3">Hard</option>
+            <option value="4">All Day Task</option>
+          </select>
+        </label>
+        <label for="hours"
+          >How Many Hours Will This Task Take?
+          <input
+            type="number"
+            id="hours"
+            name="Hours"
+            required
+            min="0"
+            max="18"
+            placeholder="Hours"
+          />
+        </label>
+        <label for="why">Why are you doing this?
+          <textarea id="why" rows="3" cols="30" placeholder="Why?"></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Add Task" />
+      </fieldset>
+    </form>
+  </body>
+  <footer></footer>
+</html>
